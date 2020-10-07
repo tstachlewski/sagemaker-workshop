@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    endpoint = "https://qdhlwkets9.execute-api.us-east-1.amazonaws.com/default/CustomerChurnXgboost"
+    $.post(endpoint,$("#data").val(),
+    function(data,status){
+      $("#response").text("Response:" + data);
+    });
+  });
+});
+</script>
+</head>
+<body>
+
+<input id="data" value="47,28,141.3,94,168.0,108,113.5,84,7.8,2,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1">
+<button>Predict!</button>
+
+<p id="response"></p>
+
+</body>
+</html>
