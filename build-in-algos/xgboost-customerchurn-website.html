@@ -5,7 +5,7 @@
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    endpoint = "https://qdhlwkets9.execute-api.us-east-1.amazonaws.com/default/CustomerChurnXgboost"
+    endpoint = "https://0i3112hdh1.execute-api.eu-west-1.amazonaws.com/default/ChustomerChurnInvoker"
     $.post(endpoint,$("#data").val(),
     function(data,status){
       $("#response").text("Response:" + data);

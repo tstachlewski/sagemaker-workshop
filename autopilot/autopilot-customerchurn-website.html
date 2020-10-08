@@ -28,7 +28,7 @@ $(document).ready(function(){
     $("#input20").val(res[19]);
   });
   $("#predict_button").click(function(){
-    endpoint = "https://0z7ketvcl9.execute-api.us-east-1.amazonaws.com/default/AutopilotCustChurnInvoker";
+    endpoint = "https://1wta9c1ao4.execute-api.eu-west-1.amazonaws.com/default/AutoChustomerChurnInvoker";
     data = $("#input1").val()+','+$("#input2").val()+','+$("#input3").val()+','+$("#input4").val()+','+$("#input5").val()+','+$("#input6").val()+','+$("#input7").val()+','+$("#input8").val()+','+$("#input9").val()+','+$("#input10").val()+','+$("#input11").val()+','+$("#input12").val()+','+$("#input13").val()+','+$("#input14").val()+','+$("#input15").val()+','+$("#input16").val()+','+$("#input17").val()+','+$("#input18").val()+','+$("#input19").val()+','+$("#input20").val();
     $.post(endpoint,data,
       function(data,status){
