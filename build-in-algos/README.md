@@ -1,6 +1,7 @@
 
 ## Instrukcje
 
+0. Sklonuj repozytorium wywołująć komendę: git clone https://github.com/tstachlewski/sagemaker-workshop.git
 1. Upewnij się, że jesteś w regionie Irlandia
 2. Przejdź następnie do usługi SageMaker a później do SageMaker Studio.
 3. Utwórz nową konfigurację - podaj swoje imię oraz utwórz nową role dającą wszelki dostęp do S3.
